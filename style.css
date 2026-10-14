@@ -1,0 +1,92 @@
+header {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+body{
+
+    background-color: #dbd5f6;
+}
+h1 {
+    background-image: linear-gradient(rgb(138, 25, 146), rgb(70, 67, 165));
+    color: transparent;
+    font-size: 40px;
+    background-clip: text;
+    text-shadow: #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+article {
+    width: 90%;
+    border-radius: 20px;
+    margin: auto;
+    padding: 20px;
+}
+
+p {
+    color: dimgray;
+}
+
+article:hover {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+p::first-letter {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: aqua;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    gap: 40%;
+}
+
+article:first-child {
+
+    background: linear-gradient(to right, #eaafc8, #654ea3);
+    font-style: inherit;
+    border: 1px solid #322359;
+}
+
+article:nth-child(2) {
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    border: 1px solid #9f515b;
+    font-style: oblique;
+
+}
+
+article:nth-child(3) {
+    background: linear-gradient(to right, #3f2b96, #a8c0ff);
+    border: 1px solid #1a0f4b;
+    font-style: italic;
+
+}
+
+article:last-child {
+    background: linear-gradient(to right, #f05053, #e1eec3);
+    border: 1px solid #5b1112;
+}
+
+#delete:hover {
+    background-color: red;
+}
+
+
+
+article:has(input:checked) {
+    background: linear-gradient(to right, black, black);
+    color: white;
+}
